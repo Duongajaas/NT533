@@ -35,6 +35,18 @@ npm run build
 npm run preview
 ```
 
+## Run With Docker
+
+Build and start the app with Docker Compose:
+
+```bash
+docker compose up --build
+```
+
+Open the app at http://localhost:8081.
+
+The container uses Nginx to serve the Vite build and proxy `/api/*` calls to the cloud backends.
+
 ## API Proxy
 
 Configured in vite.config.js:
